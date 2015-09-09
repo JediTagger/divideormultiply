@@ -1,5 +1,6 @@
+/* Quiz Instructions:
 // - In HTML, have a single text input field
-// - In HTML , have a button
+// - In HTML, have a button
 // - In JavaScript, have a function divides a number by 10
 // - In JavaScript, have a function that multiplies a number by 5
 // - When the button is clicked, call a JavaScript function that checks if the user has entered
@@ -12,6 +13,7 @@
 // -If there is a value, and its numeric value is less than 10000, call a function that passes
 //  in the user-entered value as an argument, and the name of the function that multiplies by 5. 
 //  Write the result of the calculation into the HTML document.
+*/
 
 function divi(diviarg) {
 	return diviarg / 10;
@@ -27,14 +29,9 @@ function whenClicked() {
 		alert("Gimme a number, I said!")
 	} else {
 		if (userValue > 10000) {
-			document.getElementById("result").innerHTML = "<p>Here's your new number: " + 
-			divi(userValue) + "</p><p>You're welcome.</p>";
+			document.getElementById("result").innerHTML = divi(userValue);
 		} else {
-			document.getElementById("result").innerHTML =  "<p>Here's your new number: " + 
-			multi(userValue) + "</p><p>You're welcome.</p>";
+			document.getElementById("result").innerHTML =  multi(userValue);
 		}
 	}
 }
-
-
-
